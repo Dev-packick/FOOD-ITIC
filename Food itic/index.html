@@ -25,6 +25,8 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <!-- Animation Aos-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 
@@ -35,7 +37,7 @@
       <img src="images/bg.jpg" alt="">
     </div>
 
-    <!-- header section strats -->
+    <!-- SECTION HEADER START -->
     <header class="header_section">
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
@@ -122,11 +124,6 @@
                   </g>
                 </svg>
               </a>
-              <form class="form-inline">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </button>
-              </form>
               <a href="https://wa.me/33143732040" class="order_online">
                 WhatsApp
               </a>
@@ -135,10 +132,9 @@
         </nav>
       </div>
     </header>
-    <!-- end header section -->
+    <!-- SECTION HEADER END -->
 
-
-    <!-- slider section -->
+    <!-- SLIDER SECTION START -->
     <section class="slider_section" style="margin-bottom: -90px;">
       <div id="customCarousel1" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -165,13 +161,12 @@
           </div>
         </div>
       </div>
-
     </section>
-    <!-- end slider section -->
+    <!-- SLIDER SECTION END -->
   </div>
 
 
-  <!-- Section Météo -->
+  <!-- SECTION METEO START -->
   <section class="container my-5">
     <div class="card shadow text-center">
       <div class="card-body">
@@ -183,13 +178,14 @@
       </div>
     </div>
   </section>
+  <!-- SECTION METEO END -->
 
-  <!-- offer section -->
+  <!-- SECTION NOS CUISINIER START -->
   <section class="offer_section layout_padding-bottom">
     <div class="offer_container">
       <div class="container ">
         <div class="row">
-          <div class="col-md-6  ">
+          <div class="col-md-6" data-aos="fade-right">
             <div class="box ">
               <div class="img-box">
                 <img src="images/chef.png" alt="">
@@ -256,7 +252,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6  ">
+          <div class="col-md-6" data-aos="fade-left">
             <div class="box ">
               <div class="img-box">
                 <img src="images/cheffe.png" alt="">
@@ -327,9 +323,9 @@
       </div>
     </div>
   </section>
-  <!-- end offer section -->
+  <!-- SECTION NOS CUISINIER END -->
 
-  <!-- food section -->
+  <!-- SECTION MENU RESTAURANT START -->
   <section class="food_section layout_padding-bottom" id="sectionmenu">
     <div class="container">
       <div class="heading_container heading_center">
@@ -337,11 +333,9 @@
           Menu du jour 
         </h2>
       </div>
-
       <ul class="filters_menu" style="margin-top: 20px;">
         <li class="active"><a>Disponibles</a></li>
       </ul>
-
       <div class="filters-content">
         <div class="row grid">
           <div class="col-sm-6 col-lg-4 all meteo-soleil">
@@ -1037,13 +1031,13 @@
       </div>
     </div>
   </section>
-  <!-- end food section -->
+  <!-- SECTION MENU RESTAURANT END -->
 
-  <!-- about section -->
+  <!-- SECTION A PROPOS START -->
   <section class="about_section layout_padding" id="sectionabout">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 ">
+        <div class="col-md-6">
           <div class="img-box">
             <img src="images/logo.jpeg" alt="">
           </div>
@@ -1066,9 +1060,9 @@
       </div>
     </div>
   </section>
-  <!-- end about section -->
+  <!-- SECTION A PROPOS END -->
 
-  <!-- book section -->
+  <!-- SECTION COMMANDES START-->
   <section class="book_section layout_padding" id="sectioncontact">
     <div class="container">
       <div class="heading_container">
@@ -1126,9 +1120,9 @@
       </div>
     </div>
   </section>
-  <!-- end book section -->
+  <!-- SECTION COMMANDES END-->
 
-  <!-- footer section -->
+  <!-- SECTION FOOTER START-->
   <footer class="footer_section">
     <div class="container">
       <div class="row">
@@ -1138,7 +1132,7 @@
               Contact nous
             </h4>
             <div class="contact_link_box">
-              <a href="">
+              <a href="tel:07143732040">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <span>
                   190 bis Boulevard de Charonne 75020 Paris
@@ -1147,10 +1141,10 @@
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
-                  01 43 73 20 40
+                  +33 1 43 73 20 40
                 </span>
               </a>
-              <a href="">
+              <a href="mailto:fooditic@gmail.com">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
                   fooditic@gmail.com
@@ -1197,15 +1191,15 @@
       </div>
       <div class="footer-info">
         <p>
-          &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Free Html Templates</a><br><br>
-          &copy; <span id="displayYear"></span> Distributed By
-          <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>
+          &copy; <span id="displayYear"></span> Tous droits reservés
+          <a href="">Par Team</a><br><br>
+          &copy; <span id="displayYear"></span> Réalisé par
+          <a href="#" target="_blank">Patrick & Umair</a>
         </p>
       </div>
     </div>
   </footer>
-  <!-- footer section -->
+  <!-- SECTION COMMANDES END-->
 
   <!-- jQery -->
   <script src="js/jquery-3.4.1.min.js"></script>
@@ -1227,6 +1221,11 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
   <!-- End Google Map -->
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+</script>
 
 </body>
 
